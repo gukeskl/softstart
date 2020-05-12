@@ -1,45 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,600i&display=swap&subset=latin-ext"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Document</title>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,600i&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
 
-<body>
-    <div class="main">
-        <nav>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-            <ul>
-                <li><img src="img/logo.png" alt="logo" class='logo'></li>
-                <li><a href="#" id="menu-start"><strong>Soft</strong> Start</a></li>
-                <li><a href="#" id='menu-product'>Produkt</a></li>
-                <li><a href="#" id='menu-technical-data'>Dane technicze</a></li>
-                <li><a href="#" id="menu-order">Zamów</a></li>
-                <li><a href="#" id='menu-contact'>Kontakt</a></li>
+    <script
+      src="https://kit.fontawesome.com/316de72a8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-            </ul>
-        </nav>
-        <header>
+    <title>SoftStart</title>
+  </head>
 
-        </header>
-        <section class="product">
+  <body>
+    <button class="hamburger">
+      <span class="hamburger__box">
+        <span class="hamburger__inner"> </span>
+      </span>
+    </button>
 
-        </section>
-        <section class="technical-data"></section>
-        <section class='order'></section>
-        <section class='contact'></section>
-        <footer></footer>
-
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
+      <div class='loader-wrapper'>
+        <span class="loader"><span class="loader-inner"></span></span>
     </div>
-</body>
 
+    <div class="main">
+      <div class="logo-mobile">
+        <img src="img/logo.png" alt="logo" />
+      </div>
+
+      <nav class="navigation">
+        <ul>
+          <li><img src="img/logo.png" alt="logo" class="logo" /></li>
+          <li>
+            <a id="menu-start"><strong>Soft</strong> Start</a>
+          </li>
+          <li><a id="menu-product">Produkt</a></li>
+          <li><a id="menu-download">Pobierz</a></li>
+          <li><a id="menu-technical-data">Dane techniczne</a></li>
+          <li><a id="menu-contact">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <header>
+        <div>
+          <h1 class="first-line">Soft</h1>
+          <h1 class="second-line">Start</h1>
+        </div>
+      </header>
+
+      <section class="product">
+        <img src="./img/product_photo.png" alt="product photo" />
+
+        <div class="text-wrapper">
+          <h1>Produkt</h1>
+
+          <p>
+            <strong>SOFTSTART</strong> to urządzenie najnowszej generacji,
+            dedykowane jest do opraw oświetleniowych typu LED, aby skutecznie
+            ograniczyć ich prąd rozruchowy.
+          </p>
+          <br />
+          <p>
+            Zmiana opraw konwencjonalnych na oprawy typu LED powoduje liczne
+            problemy na poziomie eksploatacji. Nowoczesne oprawy oświetleniowe
+            charakteryzują się znacznym prądem rozruchowym, co utrudnia właściwy
+            dobór zabezpieczeń głównych, jak i obwodowych. Przy zastosowaniu
+            <strong>SOFTSTARTU</strong> opartego na termistorowym układzie
+            ograniczenia prądu możliwe jest właściwe dobranie wielkości
+            zabezpieczeń prądowych. Dzięki skutecznej redukcji pików
+            rozruchowych zabezpieczenia zostają dobrane do wartości „nominalnej”
+            prądów obciążenia.
+          </p>
+        </div>
+      </section>
+      <section class="download">
+        <div class="wrapper">
+          <h1>Pobierz</h1>
+          <div class="grid-wrapper">
+            <div class="grid-element">
+              <a href="data/schemat_podlaczenia.png" download>
+                <h3>
+                  Schemat <br />
+                  podłączenia
+                </h3>
+                <i class="fas fa-file-download"></i
+              ></a>
+            </div>
+
+            <div class="grid-element">
+              <a href="data/karta_katalogowa.pdf" download>
+                <h3>Karta <br />Katalogowa</h3>
+                <i class="fas fa-file-download"></i
+              ></a>
+            </div>
+            <div class="grid-element">
+              <a href="/data/deklaracja_zgodności.pdf" download
+                ><h3>
+                  Deklaracja <br />
+                  zgodności
+                </h3>
+                <i class="fas fa-file-download"></i
+              ></a>
+            </div>
+            <div class="grid-element">
+              <a href="/data/rysunek_techniczny.dxf" download>
+                <h3>
+                  Rysunek <br />
+                  techniczny
+                </h3>
+                <i class="fas fa-file-download"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="technical-data">
+        <h1>Dane <br />techniczne</h1>
+        <div class="technical-data-wrapper">
+          <!--  -->
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="./data/schemat_podlaczenia.png">
+                  <img
+                    class="d-block"
+                    src="./data/schemat_podlaczenia.png"
+                    alt="First slide"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="./data/wymiary.png">
+                  <img
+                    class="d-block wymiary"
+                    src="./data/wymiary.png"
+                    alt="Second slide"
+                  />
+                </a>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <!--  -->
+          <ul>
+            <li>
+              <i class="fas fa-bolt"></i>napięcie zasilania: 230V AC +5/-10%
+              50Hz
+            </li>
+            <li>
+              <i class="fas fa-bolt"></i>wymiary (szer./wys./dł.): 36x58x90 mm
+            </li>
+            <li><i class="fas fa-bolt"></i>szerokość urządzenia: 2 moduły</li>
+            <li>
+              <i class="fas fa-bolt"></i>żywotność elektryczna min. 1 000 000
+              łączeń
+            </li>
+            <li>
+              <i class="fas fa-bolt"></i>obciążalność prądowa: w zależności od
+              potrzeb 6A/10A/16A/20A
+            </li>
+            <li>
+              <i class="fas fa-bolt"></i>temperatura pracy: od 30°C do +65°C
+            </li>
+            <li><i class="fas fa-bolt"></i>stopień ochrony: IP20</li>
+            <li><i class="fas fa-bolt"></i>montaż na szynie DIN</li>
+            <li><i class="fas fa-bolt"></i>sygnalizacja uszkodzenia układu</li>
+            <li>
+              <i class="fas fa-bolt"></i>zachowanie ciągłości działania
+              oświetlenia w przypadku awarii urządzenia
+            </li>
+            <li>
+              <i class="fas fa-bolt"></i>przełączanie układu przy przejściu
+              przez zero napięcia
+            </li>
+            <li>
+              <i class="fas fa-bolt"></i>przyłącze zaciskowe układu IEC 10mm
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h1>Formularz Kontaktowy</h1>
+
+        <form
+          id="contactForm"
+          action="https://formspree.io/xbjavnjp"
+          method="POST"
+        >
+          <div id="userName-field">
+            <i class="far fa-user"></i>
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              required
+              form="contactForm"
+            />
+
+            <i class="fas fa-arrow-down"></i>
+          </div>
+
+          <div id="email-field" class="innactive">
+            <i class="fas fa-at"></i>
+            <input
+              type="email"
+              name="_replyto"
+              placeholder="e-mail"
+              required
+              form="contactForm"
+            />
+            <i class="fas fa-arrow-down"></i>
+          </div>
+
+          <div id="message-field" class="innactive">
+            <i class="far fa-comment-alt"></i>
+            <textarea
+              class="txtbox"
+              name="message"
+              type="text"
+              placeholder="message"
+              required
+              form="contactForm"
+            ></textarea>
+            <button type="submit" value="Send" form="contactForm">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+
+          <div id="finish_field" class="finishField-innactive">
+            <a>Thank You!</a>
+            <i class="fas fa-check-circle"></i>
+          </div>
+        </form>
+      </section>
+      <footer>
+        <h3><strong>Elektroenergetyka</strong> - Tomasz Muklewicz</h3>
+        <p>ul. E. Orzeszkowej 48/9 50-311 Wroclaw</p>
+        <p>NIP: 8512755496 REGON: 380686508</p>
+        <p>E-mail: tomasz@muklewicz.eu</p>
+        <p>Tel: 508 922 424</p>
+      </footer>
+
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"
+      ></script>
+      <script src="js/script.js"></script>
+      <script src="js/ham_menu.js"></script>
+      <script src="js/form.js"></script>
+    </div>
+  </body>
 </html>
